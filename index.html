@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pinterest Business Account</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#fafafa;
+    color:#333;
+}
+
+/* Header */
+header{
+    background:#E60023;
+    color:white;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.btn{
+    background:white;
+    color:#E60023;
+    padding:10px 20px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Hero */
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:60px 8%;
+    gap:40px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:3.5rem;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:1.1rem;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+.hero-image{
+    flex:1;
+}
+
+.hero-image img{
+    width:100%;
+    border-radius:20px;
+}
+
+/* Features */
+.features{
+    padding:80px 8%;
+    background:white;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:2.5rem;
+    color:#E60023;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    color:#E60023;
+    margin-bottom:15px;
+}
+
+/* Pinterest Style Gallery */
+.gallery{
+    padding:80px 8%;
+}
+
+.masonry{
+    column-count:4;
+    column-gap:15px;
+}
+
+.masonry img{
+    width:100%;
+    margin-bottom:15px;
+    border-radius:15px;
+    display:block;
+}
+
+/* Pricing */
+.pricing{
+    padding:80px 8%;
+    background:white;
+}
+
+.price-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.price-card{
+    background:#fff;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.price{
+    font-size:40px;
+    color:#E60023;
+    margin:20px 0;
+}
+
+/* Contact */
+.contact{
+    padding:80px 8%;
+}
+
+form{
+    max-width:700px;
+    margin:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+button{
+    background:#E60023;
+    color:white;
+    border:none;
+    padding:15px 25px;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+/* Footer */
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+@media(max-width:992px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-text h1{
+        font-size:2.8rem;
+    }
+
+    .masonry{
+        column-count:2;
+    }
+}
+
+@media(max-width:600px){
+
+    header{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero-text h1{
+        font-size:2.2rem;
+    }
+
+    .masonry{
+        column-count:1;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Pinterest Business</div>
+
+    <nav>
+        <a href="#features">Features</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Grow Your Business With Pinterest</h1>
+        <p>
+            Reach millions of users searching for ideas, products,
+            inspiration, and services. Turn discovery into sales with
+            a Pinterest Business Account.
+        </p>
+
+        <a href="#" class="btn">Create Business Account</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=1000"
+        alt="Business">
+    </div>
+</section>
+
+<section class="features" id="features">
+
+    <div class="section-title">
+        <h2>Why Pinterest for Business?</h2>
+    </div>
+
+    <div class="feature-grid">
+
+        <div class="card">
+            <h3>Brand Awareness</h3>
+            <p>Show your products to people actively searching for ideas.</p>
+        </div>
+
+        <div class="card">
+            <h3>More Traffic</h3>
+            <p>Drive visitors directly to your website and online store.</p>
+        </div>
+
+        <div class="card">
+            <h3>Analytics</h3>
+            <p>Track engagement, saves, clicks and audience insights.</p>
+        </div>
+
+        <div class="card">
+            <h3>Advertising</h3>
+            <p>Launch campaigns and promote pins to target customers.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="gallery" id="gallery">
+
+    <div class="section-title">
+        <h2>Inspiration Gallery</h2>
+    </div>
+
+    <div class="masonry">
+        <img src="https://picsum.photos/400/600?1">
+        <img src="https://picsum.photos/400/450?2">
+        <img src="https://picsum.photos/400/700?3">
+        <img src="https://picsum.photos/400/500?4">
+        <img src="https://picsum.photos/400/650?5">
+        <img src="https://picsum.photos/400/550?6">
+        <img src="https://picsum.photos/400/750?7">
+        <img src="https://picsum.photos/400/600?8">
+    </div>
+
+</section>
+
+<section class="pricing" id="pricing">
+
+    <div class="section-title">
+        <h2>Business Plans</h2>
+    </div>
+
+    <div class="price-grid">
+
+        <div class="price-card">
+            <h3>Starter</h3>
+            <div class="price">Free</div>
+            <p>Basic business profile</p>
+        </div>
+
+        <div class="price-card">
+            <h3>Professional</h3>
+            <div class="price">$19</div>
+            <p>Advanced analytics & promotion tools</p>
+        </div>
+
+        <div class="price-card">
+            <h3>Enterprise</h3>
+            <div class="price">$49</div>
+            <p>Dedicated support and ad management</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+    <div class="section-title">
+        <h2>Contact Us</h2>
+    </div>
+
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Email Address">
+        <textarea rows="5" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+</section>
+
+<footer>
+    © 2026 Pinterest Business Landing Page. All Rights Reserved.
+</footer>
+
+</body>
+  </html>
